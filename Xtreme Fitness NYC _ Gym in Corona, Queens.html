@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xtreme Fitness NYC | Gym in Corona, Queens</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f1f5;--ink:#1b1b2f;--mute:#585a74;--card:#fff;--line:#d3d4de;--acc:#b933ad;--onacc:#fff;--hero:#241040;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15152a;--ink:#f1f1f6;--mute:#a9aac2;--card:#22223c;--line:#3a3a5c;--acc:#d35fc8;--onacc:#15152a;--hero:#0f0a22}}
+:root[data-theme="dark"]{--bg:#15152a;--ink:#f1f1f6;--mute:#a9aac2;--card:#22223c;--line:#3a3a5c;--acc:#d35fc8;--onacc:#15152a;--hero:#0f0a22}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;line-height:.98;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.btn{display:inline-block;background:var(--acc);color:var(--onacc);font-weight:600;padding:14px 26px;border-radius:999px;text-decoration:none;border:0;font-size:17px;cursor:pointer;font-family:inherit}
+.btn.alt{background:transparent;color:inherit;border:2px solid currentColor}
+.hero{background:var(--hero);color:#fff;padding-bottom:70px;--acc:#d35fc8;--onacc:#1b1b2f}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+nav b{font:800 24px "Barlow Condensed",sans-serif}
+.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid #ffffff44;border-radius:999px;padding:5px 16px 5px 5px;font-size:15px}
+.dot{width:30px;height:30px;border-radius:50%;background:var(--acc);color:#1b1b2f;display:grid;place-items:center;font:800 18px "Barlow Condensed",sans-serif}
+h1{font-size:clamp(58px,12.5vw,138px);margin:26px 0 22px;letter-spacing:-.01em}
+.lead{max-width:33em;font-size:20px;opacity:.85;margin:0}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.trust{background:var(--acc);color:var(--onacc)}
+.trust .wrap{display:flex;flex-wrap:wrap;gap:6px 30px;padding-top:14px;padding-bottom:14px;font-weight:600}
+section{padding:64px 0}
+h2{font-size:clamp(40px,6.5vw,64px);margin-bottom:12px}
+.sub{color:var(--mute);max-width:36em;margin:0 0 30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:999px;padding:12px 22px;font:600 17px "Public Sans",sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--onacc)}
+.plan{margin-top:22px;background:var(--card);border:1px solid var(--line);border-left:8px solid var(--acc);border-radius:14px;padding:24px;max-width:640px}
+.plan h3{font-size:32px;margin-bottom:8px}.plan p{margin:0 0 16px;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:28px;margin-bottom:8px}.card p{margin:0;color:var(--mute)}
+.tiers .card.hot{border:3px solid var(--acc)}
+.tag{display:inline-block;background:var(--acc);color:var(--onacc);font-size:14px;font-weight:600;border-radius:999px;padding:2px 12px;margin-bottom:10px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.steps div{counter-increment:s;padding-left:64px;position:relative}
+.steps div:before{content:counter(s);position:absolute;left:0;top:-4px;width:46px;height:46px;border-radius:50%;background:var(--acc);color:var(--onacc);display:grid;place-items:center;font:800 26px "Barlow Condensed",sans-serif}
+.steps b{display:block;font:800 28px "Barlow Condensed",sans-serif}.steps span{color:var(--mute)}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;align-items:start}
+dt{font-weight:600}dd{margin:0 0 14px;color:var(--mute)}dl{margin:0}
+.final{background:var(--hero);color:#fff;text-align:center;--acc:#d35fc8;--onacc:#1b1b2f}
+.final .cta{justify-content:center}
+footer{padding:26px 0 40px;color:var(--mute);font-size:14px}
+.bar{display:none}
+@media (max-width:640px){.bar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);z-index:5}
+.bar .btn{flex:1;text-align:center;padding:12px 10px}body{padding-bottom:80px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<nav><b>Xtreme Fitness NYC</b><a class="btn" href="tel:+17184269880">Call now</a></nav>
+<span class="pill"><span class="dot">7</span>100-05 Roosevelt Ave, Corona</span>
+<h1>Your strongest year starts here.</h1>
+<p class="lead">A full gym in the heart of Corona, Queens. Machines, free weights and cardio, close to the 7 train. Come in, look around, and see where you'll train.</p>
+<div class="cta"><a class="btn" href="#goal">Find my starting plan</a><a class="btn alt" href="tel:+17184269880">Call 718-426-9880</a></div>
+</div></header>
+
+<div class="trust"><div class="wrap"><span>Early opening, 6 AM</span><span>Near the 7 train</span><span>Cardio, strength and free weights</span><span>Beginners welcome</span></div></div>
+
+<section id="goal"><div class="wrap">
+<h2>What's your goal?</h2>
+<p class="sub">Pick one and see how to get started. Everyone begins with a quick visit to the gym.</p>
+<div class="chips" id="chips">
+<button class="chip" aria-pressed="true" data-g="lose">Lose weight</button>
+<button class="chip" aria-pressed="false" data-g="muscle">Build muscle</button>
+<button class="chip" aria-pressed="false" data-g="strong">Get stronger</button>
+<button class="chip" aria-pressed="false" data-g="new">I'm new to gyms</button>
+</div>
+<div class="plan" aria-live="polite"><h3 id="pt"></h3><p id="pp"></p><a class="btn" href="tel:+17184269880">Call and ask about this</a></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Everything you need to train</h2>
+<p class="sub">A gym built around the work, not the extras.</p>
+<div class="grid">
+<div class="card"><h3>Free weights</h3><p>Dumbbells, barbells and racks for lifts that build real strength.</p></div>
+<div class="card"><h3>Machines</h3><p>Guided strength machines that make every muscle group easy to train.</p></div>
+<div class="card"><h3>Cardio</h3><p>Treadmills, bikes and more for warm-ups, fat loss and endurance.</p></div>
+<div class="card"><h3>Coaching</h3><p>Ask the team about personal training and classes to keep you on track.</p></div>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap tiers">
+<h2>Ways to join</h2>
+<p class="sub">Rates change, so ask for today's price and any sign-up offer when you call.</p>
+<div class="grid">
+<div class="card"><h3>Day visit</h3><p>Try the gym before you commit.</p></div>
+<div class="card hot"><span class="tag">Most popular</span><h3>Monthly membership</h3><p>Full access to the gym floor, month to month.</p></div>
+<div class="card"><h3>Training package</h3><p>Work one on one with a coach toward your goal.</p></div>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Start in three steps</h2><p class="sub">No pressure. Just a plan.</p>
+<div class="steps">
+<div><b>Call or visit</b><span>Tell us your goal and ask for a look around.</span></div>
+<div><b>Pick your plan</b><span>Choose the membership that fits your schedule and budget.</span></div>
+<div><b>Train</b><span>Show up for your first workout. We'll point you to the right equipment.</span></div>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap visit">
+<div><h2>Find us</h2><dl>
+<dt>Address</dt><dd>100-05 Roosevelt Ave, Corona, NY 11368</dd>
+<dt>Phone</dt><dd><a href="tel:+17184269880">+1 718-426-9880</a></dd>
+<dt>Hours</dt><dd>Opens 6 AM Monday. Call to confirm the weekly schedule.</dd>
+<dt>Getting here</dt><dd>Take the 7 train to Corona and walk along Roosevelt Ave.</dd></dl>
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=100-05+Roosevelt+Ave+Corona+NY+11368" target="_blank" rel="noopener">Get directions</a></div>
+<div class="card"><h3>Before you come</h3><p>Bring water, a towel and a pair of training shoes. Ask at the front desk for a tour.</p></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+<h2>Stop planning. Start training.</h2>
+<p class="lead" style="margin:0 auto">Your first visit is one phone call away.</p>
+<div class="cta"><a class="btn" href="tel:+17184269880">Call 718-426-9880</a></div>
+</div></section>
+<footer><div class="wrap">&copy; Xtreme Fitness NYC Inc. Hours and prices: confirm by phone.</div></footer>
+<div class="bar"><a class="btn" href="tel:+17184269880">Call</a><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&destination=100-05+Roosevelt+Ave+Corona+NY+11368" target="_blank" rel="noopener">Directions</a></div>
+<script>
+var G={lose:["Lose weight","Mix strength training with cardio three to four days a week. Lifting protects muscle while you drop fat."],
+muscle:["Build muscle","Train each muscle group twice a week with free weights and machines, and add weight over time."],
+strong:["Get stronger","Focus on the big lifts: squat, deadlift and press. Use the racks and free weight area."],
+"new":["I'm new to gyms","Start with machines and a short full-body routine. Ask the team to show you around on your first visit."]};
+var cs=document.querySelectorAll(".chip");
+function pick(k){document.getElementById("pt").textContent=G[k][0];document.getElementById("pp").textContent=G[k][1];
+cs.forEach(function(c){c.setAttribute("aria-pressed",c.dataset.g===k)})}
+cs.forEach(function(c){c.addEventListener("click",function(){pick(c.dataset.g)})});pick("lose");
+</script>
+</body>
+</html>
